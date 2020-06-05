@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .con {
+            height: 50px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+
+        ul {
+            width: 300px;
+            height: 500px;
+            overflow: auto;
+            display:none;
+        }
+
+        ul li {
+            line-height: 50px;
+            height: 50px;
+            border-bottom: 1px solid tomato;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="con">
+
+        </div>
+        <ul>
+            <h2>产品</h2>
+            <li>
+                <input type="checkbox">
+                <span>加多宝1</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>加多宝2</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>加多宝3</span>
+            </li>
+
+            <h2>程序员</h2>
+            <li>
+                <input type="checkbox">
+                <span>程序员安慰师1</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>程序员安慰师2</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>程序员安慰师3</span>
+            </li>
+            <h2>产品</h2>
+            <li>
+                <input type="checkbox">
+                <span>加多宝1</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>加多宝2</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>加多宝3</span>
+            </li>
+
+            <h2>程序员</h2>
+            <li>
+                <input type="checkbox">
+                <span>程序员安慰师1</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>程序员安慰师2</span>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span>程序员安慰师3</span>
+            </li>
+        </ul>
+    </div>
+    <button class="btn">查看值</button>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

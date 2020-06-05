@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .wrap{
+            width:1000px;
+            margin: 100px auto;
+        }
+        .left{
+            width:800px;
+            float: left;
+            height:600px;
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+        }
+        .right{
+            width:200px;
+            height:600px;
+            float: left;
+            border: 1px solid #ccc;
+
+        }
+        input{
+            margin-top: 500px;
+        }
+        button{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="left"></div>
+        <div class="right">
+            <input type="text">
+            <button>提交</button>
+        </div>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

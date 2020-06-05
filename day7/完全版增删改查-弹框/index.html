@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        table {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>请输入用户名</h1>
+        <input type="text" class="usernam">
+        <h1>请输入密码</h1>
+        <input type="text" class="password">
+        <button class="submit">提交数据</button>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>密码</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

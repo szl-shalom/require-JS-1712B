@@ -1,0 +1,77 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-12-04 14:29:36
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-12-04 15:04:54
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .title span {
+            width: 120px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #ccc;
+        }
+        .title{
+            margin-top: 30px;;
+        }
+        .title span.active {
+            background: red;
+        }
+        .content .con{
+            display: none;
+        }
+
+        .content .con.abc{
+            display: block;
+        }
+        .title span.abc{
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+
+
+
+    <div class="title title1">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+
+
+    <div class="content">
+        <div class="con active">1</div>
+        <div class="con">2</div>
+        <div class="con">3</div>
+        <div class="con">4</div>
+        <div class="con">5</div>
+    </div>
+
+
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

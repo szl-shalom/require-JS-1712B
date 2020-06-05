@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+                <li>item5</li>
+                <li>item6</li>
+                <li>item7</li>
+                <li>item8</li>
+                <li>item9</li>
+                <li>item10</li>
+            </ul>
+            <i class="underLine"></i>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="small">
+                    <img src="./img/1.jpg" alt="">
+                    <div class="mask"></div>
+                </div>
+                <div class="big">
+                    <img src="./img/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-header">
+                    <h2>锤子手机<span>1358元</span></h2>
+                </div>
+                <h2>选择版本</h2>
+                <div class="title">
+                    <span class="active">标题1</span>
+                    <span>标题2</span>
+                    <span>标题3</span>
+                    <span>标题4</span>
+                </div>
+                <h2>选择颜色</h2>
+                <div class="title color">
+                    <span class="active">红色1</span>
+                    <span>白色2</span>
+                    <span>绿色</span>
+                    <span>天空蓝</span>
+                </div>
+                <button class="btn">立即购买</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./lib/require.js"></script>
+    <script src="./setting.js"></script>
+    <script>
+        require(["g", "$", "tab", "V", "bigImg"], function (g, $, Tab, V, BigImg) {
+            var obj = g()
+            $.get(".small img").src = obj.url
+            $.get(".big img").src = obj.url
+            $.get(".right-header h2").innerHTML = `
+                ${obj.title}<span>${obj.price}元</span>
+            `;
+
+            // 调用右侧Tab
+            [...$.gets(".title")].forEach(function (item) {
+                new Tab({
+                    title: item
+                })
+            })
+
+            // 头部Tab
+            new Tab({
+                title: $.get(".header ul"),
+                cb: function (item) {
+                    // $.get(".underLine").style.left = item.offsetLeft + "px"
+                    V($.get(".underLine"), {
+                        left: item.offsetLeft
+                    })
+                }
+            })
+            // 放大镜
+            new BigImg({
+                left: $.get(".left"),
+                mask: $.get(".mask"),
+                big: $.get(".big"),
+                img: $.get(".big img")
+            })
+
+            // 
+            $.get(".btn").onclick = function () {
+                location.href = `car.html?url=${obj.url}&title=${obj.title}&price=${obj.price}&color=${$.get(".color .active").innerHTML}&level=${$.get(".title .active").innerHTML}`
+            }
+        })
+    </script>
+</body>
+
+</html>

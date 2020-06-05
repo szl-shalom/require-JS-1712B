@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        table {
+            margin: auto;
+            width: 1000px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        .page {
+            margin: auto;
+            width: 1000px;
+        }
+
+        .page-num {
+            display: inline-block;
+        }
+
+        .list {
+            display: inline-block;
+        }
+
+        .list li {
+            display: inline-block;
+            padding: 6px 12px;
+        }
+
+        .list li.active {
+            background: red;
+            color: #fff;
+        }
+
+        .go {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>身高</th>
+                <th>体重</th>
+                <th>sex</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>身高</td>
+                <td>体重</td>
+                <td>sex</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <div class="page">
+        <div class="mask" style="height:33px;width:34px;background: red;position: absolute;opacity: .3;"></div>
+        <div class="page-num">
+            每页显示的个数
+            <select name="" id="" class="sel">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+            </select>
+        </div>
+
+        <button class="first">首页</button>
+        <button class="prev">上一页</button>
+        <ul class="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+        <button class="next">下一页</button>
+        <button class="end">尾页</button>
+
+        <div class="go">
+            <input type="text" class="code">
+            <button class="btn">跳转</button>
+        </div>
+    </div>
+
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

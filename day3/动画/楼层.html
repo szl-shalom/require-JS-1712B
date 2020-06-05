@@ -1,0 +1,72 @@
+<!--
+ * @Description: This is a JS program ! 
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-12-02 14:59:53
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-12-02 15:07:42
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li {
+            height: 500px;
+            background: red;
+            text-align: center;
+            line-height: 500px;
+            color: white;
+            font-size: 100px;
+        }
+
+        li:nth-child(odd) {
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <div style="position: fixed;top:0">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+    </div>
+    <script src="./lib/velocity.min.js"></script>
+    <script>
+        var V = Velocity, lis = document.querySelectorAll("li");
+        document.querySelector("div").onclick = function (e) {
+            var tar = e.target;
+            if (tar.nodeName === "BUTTON") {
+                // el =>滚动到那个元素
+                // 默认控制的滚动条是body
+                V(lis[tar.innerHTML - 1], "scroll", 500)
+            }
+        }
+    </script>
+</body>
+
+</html>

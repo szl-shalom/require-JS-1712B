@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>锤子登录</h1>
+        <label for="">
+            <input type="text" class="username">
+        </label>
+
+        <label for="">
+            <input type="password" class="password">
+        </label>
+        <button class="btn">点我登录</button>
+    </div>
+    <script src="./lib/require.js"></script>
+    <script src="./setting.js"></script>
+    <script>
+        require(["$", "g"], function ($, g) {
+            var obj = g()
+            $.get(".btn").onclick = function () {
+                if ($.get(".username").value === obj.username && $.get(".password").value === obj.password) {
+                    location.href = "./index.html"
+                } else {
+                    alert("账户密码不正确")
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

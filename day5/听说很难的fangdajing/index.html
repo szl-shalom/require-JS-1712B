@@ -1,0 +1,85 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-12-04 15:25:03
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-12-04 16:06:13
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .left {
+            width: 500px;
+            height: 500px;
+            float: left;
+            position: relative;
+            /* margin-left: 200px;; */
+        }
+
+
+        .left img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .left .mask {
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, .5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .right {
+            width: 500px;
+            height: 500px;
+            float: left;
+            overflow: hidden;
+            display: none;
+        }
+
+        .right img {
+            width: 2500px;
+            height: 2500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="left">
+        <img src="./img/1.jpg" alt="">
+        <div class="mask"></div>
+    </div>
+
+    <div class="right">
+        <img src="./img/1.jpg" alt="">
+    </div>
+    <div>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

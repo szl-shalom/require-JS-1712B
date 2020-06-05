@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .swiper {
+            width: 1200px;
+            height: 600px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .swiper .container {
+            width: 1200px;
+            height: 600px;
+        }
+
+        .swiper .container img {
+            width: 1200px;
+            height: 600px;
+        }
+
+        .common {
+            width: 80px;
+            height: 220px;
+            background: rgba(0, 0, 0, .3);
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .prev {
+            left: 0
+        }
+
+        .next {
+            right: 0
+        }
+
+        .page {
+            width: 100%;
+            position: absolute;
+            bottom: 20px;
+
+        }
+
+        .page span {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+
+        .page span.active {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper">
+        <div class="container">
+            <img src="./img/1.jpg" alt="" class="img">
+        </div>
+        <div class="page">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="prev common"></div>
+        <div class="next common"></div>
+    </div>
+
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

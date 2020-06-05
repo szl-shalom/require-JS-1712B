@@ -1,0 +1,117 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-12-04 10:50:57
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-12-04 11:23:28
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        ul {
+            width: 1300px;
+            margin: auto;
+            height: 600px;
+        }
+
+        ul li {
+            width: 200px;
+            height: 600px;
+            float: left;
+            overflow: hidden;
+            position: relative;
+        }
+
+        ul li img {
+            width: 500px;
+            height: 600px;
+
+        }
+
+        /* ul li:hover {
+            width: 500px;
+        }
+
+        ul li:hover .mask-header {
+            height: 0;
+        }
+
+        ul li:hover .mask-footer {
+            left: -500px;
+        } */
+
+        ul li .mask-header {
+            width: 500px;
+            height: 80%;
+            position: absolute;
+            bottom: 20%;
+            background: rgba(0, 0, 0, .3);
+        }
+
+        ul li .mask-footer {
+            width: 1000px;
+            height: 20%;
+            bottom: 0;
+            position: absolute;
+            background: rgba(0, 0, 0, .3);
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li>
+            <img src="img/1.jpg" alt="">
+            <div class="mask-header"></div>
+            <div class="mask-footer">
+                墨子
+            </div>
+        </li>
+        <li>
+            <img src="img/2.jpg" alt="">
+            <div class="mask-header"></div>
+            <div class="mask-footer">
+                墨子
+            </div>
+        </li>
+        <li>
+            <img src="img/3.jpg" alt="">
+            <div class="mask-header"></div>
+            <div class="mask-footer">
+                墨子
+            </div>
+        </li>
+        <li>
+            <img src="img/4.jpg" alt="">
+            <div class="mask-header"></div>
+            <div class="mask-footer">
+                墨子
+            </div>
+        </li>
+        <li>
+            <img src="img/5.jpg" alt="">
+            <div class="mask-header"></div>
+            <div class="mask-footer">
+                墨子
+            </div>
+        </li>
+    </ul>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

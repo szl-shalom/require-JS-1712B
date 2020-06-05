@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+table{
+    width:1220px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    tr{
+        min-height:60px;
+        height: 60px;
+    }
+    tbody{
+        tr{
+          
+            td{
+                img{
+                    width:100px;
+                }
+                button{
+                    padding:6px 12px;
+                }
+            }
+        }
+    }
+}
+
+
+

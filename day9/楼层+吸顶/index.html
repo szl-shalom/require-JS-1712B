@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .common {
+            height: 100px;
+            background: red;
+            line-height: 100px;
+            text-align: center;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            width: 100%;
+        }
+
+
+
+        .nav {
+            background: orange;
+        }
+
+        .nav.fixed {
+            position: fixed;
+            top: 0;
+            width: 1200px;
+        }
+
+        .banner {
+            background: pink;
+            height: 600px;
+            line-height: 600px;
+            ;
+        }
+
+        .floor {
+            width: 100%;
+        }
+
+        .floor ul {
+            width: 100%;
+        }
+
+        .floor ul li {
+            height: 400px;
+            width: 100%;
+            line-height: 400px;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+        }
+
+        .floor ul li:nth-child(odd) {
+            background: skyblue;
+        }
+
+        .floor ul li:nth-child(even) {
+            background: tomato;
+        }
+
+        .floor-left {
+            position: fixed;
+            left: 200px;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 120px;
+            transition: opacity 1s;
+            opacity: 0;
+        }
+
+        .floor-left ul {
+            width: 100%;
+        }
+
+        .floor-left ul li {
+            width: 100%;
+            line-height: 50px;
+            height: 50px;
+            border: 1px solid #555;
+            text-align: center;
+        }
+
+        .floor-left ul li.active {
+            background: #ccc;
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="height:20000px">
+    <div class="wrap">
+        <div class="common header">
+            某网站
+        </div>
+        <div class="nav common">
+            我是吸顶盒子
+        </div>
+        <div class="banner common">
+            我是轮播盒子
+        </div>
+
+        <div class="floor">
+            <ul class="floor-ul">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </div>
+
+        <div class="floor-left">
+            <ul class="floor-left-ul">
+                <li>楼层1</li>
+                <li>楼层2</li>
+                <li>楼层3</li>
+                <li>楼层4</li>
+                <li>楼层5</li>
+                <li>楼层6</li>
+                <li>楼层7</li>
+                <li>楼层8</li>
+                <li>楼层9</li>
+                <li>楼层10</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

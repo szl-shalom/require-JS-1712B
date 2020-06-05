@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = ["a", "b", "c", "d", "e", "f", "g"]
+        0    1    2    3    4    5
+
+        // 分组（就是分页器的页码）  
+        // data.length 是数据的长度
+        // num 是每页显示的个数
+        // maxLength 是分页器最大的页码
+        var maxLength = Math.ceil(data.length / num)
+
+
+
+
+        //  index  num   获取当前页码对应的数据
+        // 0     2    arr.slice(0,2)  [a,b]
+
+        // 1     2    arr.slice(2,4)  [c,d]
+
+
+        // 2     2     arr.slice(4,6)  [e,f]
+        // 11    2               22,24
+
+        // 获取对应的数据
+        var res = data.slice(index * num, (index + 1) * num)
+
+
+        // 获取分页器最大的页码
+        // this.data.length 是大数据的长度
+        // this.num 每页显示的个数
+        // this.maxLength 分页器最大的页码
+        this.maxLength = Math.ceil(this.data.length / this.num)
+
+        // 获取对应的数据
+        // this.index 当前下标
+        // this.num 每页显示的个数
+        // this.data 大数据
+        var data = this.data.slice(this.index * this.num, (this.index + 1) * this.num);
+
+    </script>
+</body>
+
+</html>

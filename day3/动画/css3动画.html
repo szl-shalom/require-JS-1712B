@@ -1,0 +1,45 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-12-02 14:46:44
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-12-02 14:59:17
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            /* transform: translate(200px,200px); */
+            /* transform: scale(2); */
+            /* transform: skewX(30deg); */
+            transform: rotateX(90deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="background: red;height:200px;width:200px;">
+
+    </div>
+    <script src="./lib/velocity.min.js"></script>
+    <script>
+        var V = Velocity, div = document.querySelector("div");
+        V(div, {
+            // translateX: 200, //水平
+            // translateY: 200 //竖直
+            // scale: 0.5 //缩放比例
+            // skewX: 30 //倾斜消毒
+            rotateX: 180
+        }, 2000)
+    </script>
+</body>
+
+</html>

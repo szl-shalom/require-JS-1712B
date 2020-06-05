@@ -1,0 +1,74 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-12-02 14:28:30
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-12-02 15:08:37
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>开始动画</button>
+    <button>暂停动画</button>
+    <button>继续动画</button>
+    <button>完成动画</button>
+    <button>终止动画</button>
+    <button>回复动画</button>
+    <div style="background: red;width:200px;height:200px;">
+
+    </div>
+    <script src="./lib/velocity.min.js"></script>
+    <script>
+        var V = Velocity, div = document.querySelector("div"),
+            btns = document.querySelectorAll("button");
+
+        // V(div, "slideUp", 2000) //收起
+        // V(div, "slideDown", 2000) //展开
+        // V(div, "fadeOut", 2000) // 淡出
+        // V(div, "fadeIn", 2000) // 淡入
+
+
+
+        // btns[0].onclick = function () {
+        //     V(div, {
+        //         width: 500,
+        //         height: 500,
+        //     }, 2000)
+        // }
+
+        // btns[1].onclick = function () {
+        //     V(div, "pause") //暂停
+        // }
+
+        // btns[2].onclick = function () {
+        //     V(div, "resume") //继续动画
+        // }
+
+        // btns[3].onclick = function () {
+        //     V(div, "finish") //直接到最终的CSS样式，没有中间过渡效果
+        // }
+
+        // btns[4].onclick = function () {
+        //     V(div, "stop") //终止动画
+        // }
+
+
+        // btns[5].onclick = function () {
+        //     V(div, "reverse") //倒退一个动画
+        // }
+
+
+
+    </script>
+</body>
+
+</html>

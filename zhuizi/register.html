@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>锤子科技</h1>
+        <label for="">
+            <input type="text" class="username" value="qweqwe">
+            <span></span>
+        </label>
+        <label for="">
+            <input type="password" class="password" value="qweqwe1">
+            <span></span>
+        </label>
+
+        <label for="">
+            <input type="text" class="email">
+            <span></span>
+        </label>
+
+        <label for="" class="clearfix">
+            <input type="text" class="usercode" value="5efg">
+            <span class="code">5efg</span>
+        </label>
+        <button class="btn">立即注册</button>
+    </div>
+    <script src="./lib/require.js"></script>
+    <script src="./setting.js"></script>
+    <script>
+        require(["r", "$"], function (R, $) {
+            new R({
+                data: [{
+                    input: $.get(".username"),
+                    reg: /^[\u4e00-\u9fa5a-zA-Z]{4,8}$/,
+                    okInfo: "√",
+                    cancelInfo: "用户名格式必须是4-8个中英文字符",
+                    emptyInfo: "用户名不可以为空"
+                }, {
+                    input: $.get(".password"),
+                    reg: /^\w{6,10}$/,
+                    okInfo: "√",
+                    cancelInfo: "密码格式必须是6-10个字母数字下划线",
+                    emptyInfo: "密码不可以为空"
+                }, {
+                    input: $.get(".email"),
+                    reg: /^\w+@\w+\.(com|con)$/,
+                    okInfo: "√",
+                    cancelInfo: "邮箱格式不正确",
+                    emptyInfo: "邮箱不可以为空"
+                }],
+                code: $.get(".code"),
+                usercode: $.get(".usercode"),
+                btn: $.get(".btn")
+            })
+        })
+    </script>
+</body>
+
+</html>

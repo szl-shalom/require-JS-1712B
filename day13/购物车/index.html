@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: ;
+        }
+
+        .wrap {
+            width: 800px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid #ccc;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        tr,
+        td,
+        th {
+            border: 1px solid #ccc;
+        }
+
+        td img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>全选
+                        <input type="checkbox" class="check-all">
+                    </th>
+                    <th>商品名称</th>
+                    <th>商品图片</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="check-one">
+                    </td>
+                    <td>衬衣</td>
+                    <td>
+                        <img src="./img/1.jpg" alt="">
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button class="red">-</button>
+                        <span>1</span>
+                        <button class="add">+</button>
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button class="del">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>衬衣</td>
+                    <td>
+                        <img src="./img/1.jpg" alt="">
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button>删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>衬衣</td>
+                    <td>
+                        <img src="./img/1.jpg" alt="">
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button>删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>衬衣</td>
+                    <td>
+                        <img src="./img/1.jpg" alt="">
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button>删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>衬衣</td>
+                    <td>
+                        <img src="./img/1.jpg" alt="">
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </td>
+                    <td>100</td>
+                    <td>
+                        <button>删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <span class="price-all">总价：6854</span>
+            <span class="count-all">总数量：6534163</span>
+        </div>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+    <script>
+
+        // var arr = [1, 2, 3, 4, 5]
+
+        // var flag = arr.every(function (item) {
+        //     console.log(item)
+        //     return item - 2
+        // })
+
+    </script>
+</body>
+
+</html>

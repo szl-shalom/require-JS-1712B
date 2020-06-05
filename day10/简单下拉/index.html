@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+
+        }
+
+        .wrap {
+            width: 300px;
+            position: relative;
+            margin: auto;
+        }
+
+        .search {
+            width: 300px;
+            height: 50px
+        }
+
+        .icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        ul {
+            display: none;
+        }
+
+        ul li {
+            line-height: 50px;
+            height: 50px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        ul li.active {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <b class="icon">^</b>
+        <input type="text" class="search">
+
+        <ul class="list">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+        </ul>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

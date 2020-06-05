@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .left {
+            width: 120px;
+            float: left;
+        }
+
+        .left span {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            display: block;
+            border: 1px solid #ccc;
+        }
+
+        .left span.active {
+            background: #555;
+        }
+
+        .right {
+            float: left;
+            width: 300px;
+            height: 300px;
+        }
+
+        .right img {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .right img.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <span class="active"> 1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    <div class="right">
+        <img src="img/1.jpg" alt="" class="active">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+    </div>
+    <script src="./lib/require.js" data-main="main"> </script>
+</body>
+
+</html>

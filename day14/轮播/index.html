@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            margin: auto;
+            width: 1200px;
+            height: 600px;
+        }
+
+        .container {
+            width: 1200px;
+            height: 600px;
+            position: relative;
+        }
+
+        img {
+            width: 0px;
+            height: 0px;
+            float: left;
+            transition: all 1s;
+            position: absolute;
+        }
+
+        img.active {
+            width: 1200px;
+            height: 600px;
+            float: right;
+            bottom: 0;
+            right:0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+        </div>
+    </div>
+
+    <script src="../轮播图/lib/require.js" data-main="main">
+     
+
+    </script>
+</body>
+
+</html>

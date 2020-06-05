@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .swiper {
+            width: 1100px;
+            margin: 100px auto;
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 800px;
+            float: left;
+            height: 500px;
+        }
+
+        .page {
+            width: 300px;
+            height: 500px;
+            float: left;
+            overflow: auto;
+            position: relative;
+            z-index: 999;
+        }
+
+        .container img {
+            height: 500px;
+            width: 800px;
+            float: left;
+        }
+
+        .page li {
+            width: 300px;
+            height: 100px;
+            float: left;
+        }
+
+        .page li:hover {
+            background: pink;
+        }
+
+        .page li.active {
+            background: pink;
+        }
+
+        .page li dl {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .page li dl dt {
+            width: 80px;
+            height: 100px;
+            float: left;
+        }
+
+        .page li dl dt img {
+            width: 80px;
+            height: 80px
+        }
+
+        .page li dl dd img {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+
+        .prev,
+        .next {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            background: rgba(0, 0, 0, .3);
+            color: white;
+            line-height: 80px;
+            text-align: center;
+        }
+
+        .prev {
+            left: 0
+        }
+
+        .next {
+            right: 300px;
+        }
+        .box{
+            width:800px;
+            height: 500px;
+            float: left;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="swiper">
+        <div class="box">
+            <div class="container">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+            </div>
+        </div>
+        <ul class="page">
+            <li>
+                <dl>
+                    <dt>
+                        <img src="./img/1.jpg" alt="">
+                    </dt>
+                    <dd>
+                        124万5345
+                    </dd>
+
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <img src="./img/1.jpg" alt="">
+                    </dt>
+                    <dd>
+                        124万5345
+                    </dd>
+
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <img src="./img/1.jpg" alt="">
+                    </dt>
+                    <dd>
+                        124万5345
+                    </dd>
+
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <img src="./img/1.jpg" alt="">
+                    </dt>
+                    <dd>
+                        124万5345
+                    </dd>
+
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <img src="./img/1.jpg" alt="">
+                    </dt>
+                    <dd>
+                        124万5345
+                    </dd>
+
+                </dl>
+            </li>
+        </ul>
+        <div class="prev">《《</div>
+        <div class="next">》》</div>
+        </di>
+        <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            ;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100%;
+        }
+
+        .left {
+            width: 10%;
+            float: left;
+        }
+
+        .right {
+            width: 90%;
+            float: left;
+        }
+
+        .left span {
+            border: 1px solid #ccc;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            ;
+            text-align: center;
+            display: block;
+        }
+
+        .left span.active {
+            background: red;
+        }
+
+        .right .con {
+            display: none;
+            width: 100%;
+        }
+
+        .right .con.active {
+            display: block;
+
+        }
+
+        .con table {
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        table tr,
+        table,
+        td,
+        table th {
+            border: 1px solid #ccc;
+        }
+
+        label {
+            display: block;
+            height: 45px;
+            margin-top: 10px;
+        }
+
+        label span {
+            width: 100px;
+            height: 45px;
+            line-height: 45px;
+            text-align: right;
+            display: inline-block;
+        }
+
+
+        label input {
+            width: 200px;
+            height: 45px;
+            line-height: 45px;
+            border: 1px solid #ccc;
+        }
+
+        label select {
+            width: 200px;
+            height: 45px;
+            line-height: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <button class="add">添加</button>
+        <div class="left">
+            <span>MoneyList</span>
+            <span>AreaList</span>
+        </div>
+        <div class="right">
+            <div class="con active">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>收入类型</th>
+                            <th>收入</th>
+                            <th>支出</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="t1">
+                        <tr>
+                            <td>王五</td>
+                            <td>充值</td>
+                            <td>5000</td>
+                            <td>4000</td>
+                            <td>
+                                <button>删除</button>
+                                <button>编辑</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="con">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>收入类型</th>
+                            <th>收入</th>
+                            <th>支出</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>张三</td>
+                            <td>充值</td>
+                            <td>5000</td>
+                            <td>4000</td>
+                            <td>
+                                <button>删除</button>
+                                <button>编辑</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div style="position: fixed;left:0;top:0;width:100%;height:100%;background: rgba(0,0,0,.3);"></div>
+    <div style="position: fixed;left:50%;top:50%;transform:translate(-50%,-50%);padding:20px;background: #fff;">
+        <h1>添加资金</h1>
+        <label for="">
+            <span>收支类型：</span>
+            <select name="" id="">
+                <option value="充值">充值</option>
+                <option value="提现">提现</option>
+                <option value="存款">存款</option>
+            </select>
+        </label>
+        <label for="">
+            <span>姓名：</span>
+            <input type="text">
+        </label>
+        <label for="">
+            <span>收入</span>
+            <input type="text">
+        </label>
+        <label for="">
+            <span>支出</span>
+            <input type="text">
+        </label>
+        <button>确定</button>
+        <button>取消</button>
+    </div> -->
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-12-02 13:49:12
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-12-02 14:28:09
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/velocity.min.js"></script>
+    <style>
+        div {
+            background: red;
+            width: 250px;
+            height: 250px;
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        var V = Velocity;
+        // 1、基本语法  
+        // el=>给那个元素添加动画
+        // object1=> 是一个对象  是最终的CSS样式
+        // object2=> 是一个对象  基本配置信息
+        // V(el, object1, object2)
+
+        // 举例
+        // var div = document.querySelector("div");
+        // V(div, {
+        //     width: 500,
+        //     height: 500,
+        //     marginLeft: 200,
+        //     borderRadius: "50%",
+        // }, {
+        //     duration: 5000, //动画时长
+        //     // delay: 2000,//动画延迟时间
+        //     loop: true, //动画循环次数 如果是布尔值true那就是无线循环
+        //     begin: function () {
+        //         console.log("动画开始了！！！！")
+        //     },
+        //     progress: function () {
+        //         console.log("动画正在进行中！！！！")
+        //     },
+        //     complete: function () {
+        //         console.log("动画完成了！！！！")
+        //     }
+        // })
+        // 2.链式动画
+        // V(div, {
+        //     width: 500,
+        // })
+        // V(div, {
+        //     height: 500,
+        // })
+        // V(div, {
+        //     marginLeft: 200,
+        // })
+        // V(div, {
+        //     borderRadius: "50%",
+        // })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width:800px;
+    margin: 100px auto;
+}
+.pic{
+    width:100%;
+}
+.pic img{
+    width:100px;
+    height:100px;
+    opacity:.3;
+}
+
+.pic img.active{
+        opacity: 1;
+}
+
+
+.content{
+    width:100%;
+}
+
+.content dl{
+    width:100%;
+    height:120px;
+}
+
+.content dl dt{
+    width:100px;
+    height:100px;
+    float: left;
+}
+
+.content dl dt img{
+   width:100%;
+   height:100%;
+}
+.content dl dd{
+    width:680px;
+    float: right;
+
+}
+
+
+.right{
+    float: right;
+}
+
+input{
+    width:220px;
+    height:45px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {}
+
+        .wrap {
+            width: 1200px;
+            height: 600px;
+            overflow: hidden;
+            margin: auto;
+            position: relative;
+        }
+
+        .container {
+            width: 6000px;
+            height: 600px;
+            position: absolute;
+            /* transition: left 1s;
+            left:0; */
+        }
+
+        .container img {
+            width: 1200px;
+            height: 600px;
+            float: left;
+        }
+
+        .prev,
+        .next {
+            width: 80px;
+            height: 220px;
+            background: rgba(0, 0, 0, .3);
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            line-height:220px;
+            color: white;
+            font-size: 50px;
+        }
+        .prev{
+            left:0
+        }
+
+        .next{
+            right:0
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+        </div>
+        <div class="prev">&lt;</div>
+        <div class="next">&gt;</div>
+    </div>
+
+    <script src="../分页器/lib/require.js" data-main="main">
+
+    </script>
+</body>
+
+</html>

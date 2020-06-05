@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/car.css">
+</head>
+
+<body>
+    <table border=1>
+        <thead>
+            <tr>
+                <th>
+                    全选
+                    <input type="checkbox" class="check-all">
+                </th>
+                <th>商品名称</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th>小计</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" class="check-one">
+                </td>
+                <td>
+                    <img src="./img/1.jpg" alt="">
+                    <span>锤子手机1</span>
+                </td>
+                <td>
+                    <span class="price">200</span>元
+                </td>
+                <td>
+                    <button class="red">-</button>
+                    <span class="num">1</span>
+                    <button class="add">+</button>
+                </td>
+                <td class="litter-price">200</td>
+
+                <td>
+                    <span class="del">X</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" class="check-one">
+                </td>
+                <td>
+                    <img src="./img/1.jpg" alt="">
+                    <span>锤子手机1</span>
+                </td>
+                <td>
+                    <span class="price">200</span>元
+                </td>
+                <td>
+                    <button class="red">-</button>
+                    <span class="num">1</span>
+                    <button class="add">+</button>
+                </td>
+                <td class="litter-price">200</td>
+                <td>
+                    <span class="del">X</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" class="check-one">
+                </td>
+                <td>
+                    <img src="./img/1.jpg" alt="">
+                    <span>锤子手机1</span>
+                </td>
+                <td>
+                    <span class="price">200</span>元
+                </td>
+                <td>
+                    <button class="red">-</button>
+                    <span class="num">1</span>
+                    <button class="add">+</button>
+                </td>
+                <td class="litter-price">200</td>
+                <td>
+                    <span class="del">X</span>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="all-price">
+                    总价钱：1200
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="./lib/require.js"></script>
+    <script src="./setting.js"></script>
+    <script>
+        require(["$", "car", "g"], function ($, Car, g) {
+            var obj = g()
+            $.get("tbody").innerHTML += `
+            <tr>
+                <td>
+                    <input type="checkbox" class="check-one">
+                </td>
+                <td>
+                    <img src=${obj.url} alt="">
+                    <span>手机名称：${obj.title} 颜色：${obj.color} 版本：${obj.level}</span>
+                </td>
+                <td>
+                    <span class="price">${obj.price}</span>元
+                </td>
+                <td>
+                    <button class="red">-</button>
+                    <span class="num">1</span>
+                    <button class="add">+</button>
+                </td>
+                <td class="litter-price">${obj.price}</td>
+                <td>
+                    <span class="del">X</span>
+                </td>
+            </tr>
+            `
+            new Car({
+                table: $.get("table"),
+                checkAll: $.get(".check-all"),
+                allPrice: $.get(".all-price")
+            })
+        })
+    </script>
+
+    <!-- <script>
+        var arr = [1, 2, 3, 4, 5]
+        // 第一次  a = 1 , b = 2
+        // 第二次  a = 3 , b = 3  
+        // 第三次  a = 6 , b = 4  
+        // 第四次  a = 10 , b = 5  
+        // 最后一次 a =15  函数返回值15
+        var res = arr.reduce(function (a, b) {
+            return a + b
+        })
+        console.log(res)
+
+
+        var arr = [{
+            age: 1
+        }, {
+            age: 2
+        }, {
+            age: 3
+        }, {
+            age: 4
+        },]
+
+        // 第一次  a.age = 1 , b.age = 2  return 3
+        // 第二次  a = 3 , a.age     b = 3  
+        // 第三次  a = 6 , b = 4  
+        // 第四次  a = 10 , b = 5  
+        // 最后一次 a =15  函数返回值15
+        var res1 = arr.reduce(function (a, b) {
+            return a + b.age
+        }, 0)
+        console.log(res1)
+    </script> -->
+</body>
+
+</html>

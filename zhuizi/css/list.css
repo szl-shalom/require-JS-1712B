@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.wrap .header {
+  width: 100%;
+  height: 40px;
+  background: #000;
+}
+
+.wrap .nav-bar {
+  width: 1220px;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  height: 60px;
+}
+
+.wrap .nav-bar ul {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+
+.wrap .nav-bar ul > li {
+  padding: 0 10px;
+  float: left;
+}
+
+.wrap .nav-bar .con {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  display: none;
+  background: pink;
+  z-index: 999;
+}
+
+.wrap .nav-bar .con dl {
+  width: 220px;
+  height: 400px;
+  padding: 10px;
+  float: left;
+}
+
+.wrap .nav-bar .con dl dt {
+  width: 100%;
+  height: 300px;
+}
+
+.wrap .nav-bar .con dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .nav-bar .con dl dd p:nth-child(2) {
+  color: red;
+}
+
+.wrap .nav-bar .search {
+  float: right;
+  margin-top: 15px;
+}
+
+.wrap .sort {
+  width: 1220px;
+  margin: auto;
+  height: 60px;
+  margin-bottom: 20px;
+  line-height: 60px;
+}
+
+.wrap .sort span {
+  padding: 0 20px;
+}
+
+.wrap .content {
+  width: 1220px;
+  margin: auto;
+}
+
+.wrap .content dl {
+  width: 300px;
+  float: left;
+  height: 500px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.wrap .content dl dt {
+  width: 100%;
+  height: 300px;
+}
+
+.wrap .content dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .content dl dt:hover .buy {
+  display: block;
+}
+
+.wrap .content dl dd {
+  text-align: center;
+}
+
+.wrap .content dl dd p:nth-child(2) {
+  color: red;
+}
+
+.wrap .content dl ul {
+  width: 100%;
+  text-align: center;
+}
+
+.wrap .content dl ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.wrap .content dl ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .content dl ul li img.active {
+  border: 2px red solid;
+}
+
+.wrap .content dl .buy {
+  display: none;
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.wrap .content dl .buy button {
+  width: 80%;
+  margin: 0 10%;
+  height: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: pink;
+  border: 0;
+  border-radius: 25px;
+}
+
+.wrap .page {
+  width: 1220px;
+  margin: auto;
+  text-align: center;
+}
+
+.wrap .page li {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.wrap .page li.active {
+  background: red;
+  color: #fff;
+}

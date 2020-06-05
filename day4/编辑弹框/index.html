@@ -1,0 +1,62 @@
+<!--
+ * @Description: This is a JS program !
+ * @Author: 史志龙
+ * @Github: https://github.com/szl-shalom/
+ * @Date: 2019-12-03 15:28:59
+ * @LastEditors: 史志龙
+ * @LastEditTime: 2019-12-03 16:56:04
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width:800px;
+            margin: auto;
+        }
+        table{
+            width:100%;
+            border-collapse: collapse;
+            margin-top: 20px;;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <input type="text" placeholder="请输入姓名" class="username">
+        <input type="text" placeholder="请输入年龄" class="age">
+        <input type="date" placeholder="请选择日期" class="date">
+        <button class="btn">提交</button>
+        <table border="1">
+           <thead>
+               <tr>
+                   <th>姓名</th>
+                   <th>年龄</th>
+                   <th>日期</th>
+                   <th>操作</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>张三</td>
+                   <td>18</td>
+                   <td>2019-12-11</td>
+                   <td>
+                       <button>编辑</button>
+                   </td>
+               </tr>
+           </tbody>
+        </table>
+    </div>
+    <script src="./lib/require.js" data-main="main"></script>
+</body>
+</html>
